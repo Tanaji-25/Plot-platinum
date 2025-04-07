@@ -1,6 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <style>{`
@@ -114,6 +118,15 @@ const Home = () => {
           border-radius: 5px;
           font-weight: bold;
           cursor: pointer;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          display: inline-block;
+        }
+
+        .contact-button:hover {
+          background-color: #a85e4a;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         @media (max-width: 768px) {
@@ -164,8 +177,21 @@ const Home = () => {
           <h2>Introduction</h2>
           <h3>BRIDGING WAKAD & HINJAWADI – A BUSINESS ADDRESS LIKE NO OTHER</h3>
           <p>Strategically positioned to offer unparalleled advantages, Platinum 9 - World Tower seamlessly blends the accessibility of Wakad with the dynamic energy of Hinjawadi.</p>
-          <p>This 35-story architectural marvel stands as PCMC’s tallest commercial masterpiece and redefines the very meaning of Luxury Office Space in Wakad-Hinjawadi.</p>
-          <button className="contact-button">Contact Us</button>
+          <p>This 35-story architectural marvel stands as PCMC's tallest commercial masterpiece and redefines the very meaning of Luxury Office Space in Wakad-Hinjawadi.</p>
+          
+          {/* Updated Contact Button with both options */}
+          {/* Option 1: Using useNavigate (programmatic navigation) */}
+          <button 
+            className="contact-button"
+            onClick={() => navigate('/contact')}
+          >
+            Contact Us
+          </button>
+
+          {/* Option 2: Using Link component (alternative approach) */}
+          {/* <Link to="/contact" className="contact-button">
+            Contact Us
+          </Link> */}
         </div>
       </div>
     </>
