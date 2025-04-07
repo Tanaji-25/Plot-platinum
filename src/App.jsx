@@ -7,7 +7,7 @@ import About from './components/About';
 import Location from './components/Location';
 import Amenities from './components/Amenities';
 import Contact from './components/Contact';
-import './App.css'; // Add this for basic styling
+import './App.css'; 
 
 function App() {
   return (

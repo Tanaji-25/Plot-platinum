@@ -179,8 +179,7 @@ const Home = () => {
           <p>Strategically positioned to offer unparalleled advantages, Platinum 9 - World Tower seamlessly blends the accessibility of Wakad with the dynamic energy of Hinjawadi.</p>
           <p>This 35-story architectural marvel stands as PCMC's tallest commercial masterpiece and redefines the very meaning of Luxury Office Space in Wakad-Hinjawadi.</p>
           
-          {/* Updated Contact Button with both options */}
-          {/* Option 1: Using useNavigate (programmatic navigation) */}
+
           <button 
             className="contact-button"
             onClick={() => navigate('/contact')}
@@ -188,10 +187,6 @@ const Home = () => {
             Contact Us
           </button>
 
-          {/* Option 2: Using Link component (alternative approach) */}
-          {/* <Link to="/contact" className="contact-button">
-            Contact Us
-          </Link> */}
         </div>
       </div>
     </>
