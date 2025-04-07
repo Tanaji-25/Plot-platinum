@@ -9,20 +9,21 @@ const Home = () => {
     <>
       <style>{`
         .home-container {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 2rem;
-          max-width: 1200px;
-          margin: 80px auto 0;
-          min-height: calc(100vh - 80px);
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;  // Reduced top padding from 2rem to 1rem
+    max-width: 1200px;
+    margin: 40px auto 0;  // Reduced top margin from 80px to 40px
+    min-height: calc(100vh - 80px);
+  }
 
-        .text-content {
-          flex: 1;
-          padding-right: 3rem;
-          max-width: 50%;
-        }
+  .text-content {
+    flex: 1;
+    padding-right: 3rem;
+    max-width: 50%;
+    margin-top: -20px;  // Added negative margin to pull content up
+  }
 
         .image-content {
           flex: 1;
